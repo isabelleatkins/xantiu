@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "xantiu"
+version = "0.1.0"
+description = ""
+authors = ["Isabelle Atkins <isabelleatkins@hotmail.co.uk>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.13"
+requests = "^2.31.0"
+click = "^8.1.7"
+pandas = "^2.1.1"
+
+[tool.poetry.scripts]
+open-interest = "xantiu.get-open-interest:get_open_interest"
+scan-extensions = "xantiu.scan-extensions:scan_extensions"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
